@@ -18,5 +18,5 @@ object $classname$App
   override val actorSystem = ActorSystem("$systemname$", config)
   override val cluster = Cluster(actorSystem)
 
-  init$name$Components
+  init$classname$Components
 }
