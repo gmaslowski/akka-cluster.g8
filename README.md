@@ -3,8 +3,13 @@ akka-cluster Giter8 template
 
 A Giter8 template for rapid setting up akka cluster locally, used to quick getting started with it..
 
+Usage
+-----
 To create the project using this template:
-Run this in the sbt console: ```sbt new gmaslowski/akka-cluster.g8```
+```sbt new gmaslowski/akka-cluster.g8```
+
+#### Example
+[![asciicast](https://asciinema.org/a/250761.svg)](https://asciinema.org/a/250761)
 
 Template license
 ----------------
