@@ -9,7 +9,7 @@ To create the project using this template:
 ```sbt new gmaslowski/akka-cluster.g8```
 
 #### Example
-[![asciicast](https://asciinema.org/a/250761.svg)](https://asciinema.org/a/250761)
+[![asciicast](https://asciinema.org/a/250761.svg)](https://asciinema.org/a/250761?speed=2.5&theme=solarized-dark&size=medium)
 
 Template license
 ----------------
