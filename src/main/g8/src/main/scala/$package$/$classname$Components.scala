@@ -2,7 +2,7 @@ package $package$
 
 import akka.actor.ActorSystem
 
-object $name$Components {
+object $classname$Components {
 
   trait Provides
 
@@ -14,7 +14,7 @@ object $name$Components {
     extends Requires
       with Provides {
 
-    def init$name$Components: Unit = {
+    def init$classname$Components: Unit = {
       actorSystem.actorOf(ClusterListener.props)
     }
   }

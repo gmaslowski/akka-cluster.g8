@@ -1,6 +1,6 @@
 package $package$
 
-object $name$ClusterApp
+object $classname$ClusterApp
   extends App {
 
   $name$App.main(Seq("2018").toArray)

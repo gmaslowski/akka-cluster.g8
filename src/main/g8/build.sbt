@@ -4,8 +4,7 @@ val logbackV = "1.2.3"
 scalaVersion := "2.12.8"
 
 organization := "$package$"
-name := $name;format="normalize"$
-
+name := "$systemname$"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaV,
@@ -16,4 +15,4 @@ libraryDependencies ++= Seq(
 
 fork in run := true
 
-mainClass in(Compile, run) := Some("$package$.$name;format="Camel"$ClusterApp")
+mainClass in(Compile, run) := Some("$package$.$classname$ClusterApp")

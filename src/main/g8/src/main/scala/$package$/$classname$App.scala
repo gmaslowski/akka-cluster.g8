@@ -4,18 +4,18 @@ import akka.actor.ActorSystem
 import akka.cluster.Cluster
 import com.typesafe.config.ConfigFactory
 
-object $name$App
+object $classname$App
   extends App
     with AkkaComponents.Default
     with AkkaClusterComponents.Default
-    with $name$Components.Default {
+    with $classname$Components.Default {
 
   val port = if (args.isEmpty) "0" else args(0)
   val config = ConfigFactory
-    .parseString(s"akka.remote.netty.tcp.port=$port")
+    .parseString("akka.remote.netty.tcp.port=" + port)
     .withFallback(ConfigFactory.load())
 
-  override val actorSystem = ActorSystem("$name$", config)
+  override val actorSystem = ActorSystem("$systemname$", config)
   override val cluster = Cluster(actorSystem)
 
   init$name$Components
